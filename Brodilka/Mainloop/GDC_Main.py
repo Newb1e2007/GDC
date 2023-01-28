@@ -1,12 +1,11 @@
 import pygame
 # import class_player
 # import class_reward
-import Entity
-import Field
-import Enemy
+import Field.Temp_Field
+import Enemy.Enemy
 from random import randint
-from CONST import *
-from class_Point import Point
+from CONFIG.CONST import *
+from Uni_Classes.Point import Point
 
 
 def main():

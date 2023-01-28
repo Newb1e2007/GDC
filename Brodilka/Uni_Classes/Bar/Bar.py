@@ -1,7 +1,7 @@
 import pygame
 import random
 from math import fabs
-from class_Point import *
+from Uni_Classes.Point import Point
 
 
 class Bar:

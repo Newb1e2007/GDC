@@ -1,6 +1,6 @@
 import pygame
-from CONST import *
-import Button_v2
+from CONFIG.CONST import *
+import Inreface.Button.Button_v2
 import sys
 
 # import Field

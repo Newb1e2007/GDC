@@ -1,7 +1,7 @@
 import pygame
-from CONST import *
-import class_Point
-import class_Inventory
+from CONFIG.CONST import *
+from Uni_Classes.Point import Point
+import Auxiliary_Classes.Inventory as Inventory
 
 # скины на игрока (мб сделать в константах)
 evgenii = [pygame.image.load('images/oaoaoaoaoaoaoaooa.png').convert_alpha(),
@@ -49,7 +49,7 @@ class Player:
         self.setting_skin(name)
 
     def _creating_inventory(self, inv_par):
-        return class_Inventory.Inventory(inv_par[0], inv_par[1], inv_par[2], inv_par[3], inv_par[4], inv_par[5], inv_par[6], inv_par[7], inv_par[8], inv_par[9], inv_par[10], inv_par[11], inv_par[12], inv_par[13], inv_par[14])
+        return Inventory.Inventory(inv_par[0], inv_par[1], inv_par[2], inv_par[3], inv_par[4], inv_par[5], inv_par[6], inv_par[7], inv_par[8], inv_par[9], inv_par[10], inv_par[11], inv_par[12], inv_par[13], inv_par[14])
 
     def setting_skin(self, name):
         self.skin = name

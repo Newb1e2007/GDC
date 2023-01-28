@@ -1,4 +1,4 @@
-from class_Point import Point
+from Uni_Classes.Point import Point
 from collections import deque
 
 

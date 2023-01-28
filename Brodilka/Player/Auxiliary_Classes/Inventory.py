@@ -1,6 +1,6 @@
 import pygame
-from CONST import *
-import Slot
+from CONFIG.CONST import *
+import Uni_Classes.Slot.Slot as Slot
 
 
 class Inventory:
