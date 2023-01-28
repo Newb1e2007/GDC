@@ -1,6 +1,6 @@
 # Our first game
 
-This is our first co-developed game. It's labirint!  
+This is our first co-developed game. It's maze!  
   
   .  
 ╔┘└╦══╦═════╦══╦══╦══╦══╗  
