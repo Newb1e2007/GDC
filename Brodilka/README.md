@@ -1,1 +1,3 @@
+# Our first game
 
+This is our first co-developed game. It's labirint!
