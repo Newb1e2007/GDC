@@ -1,13 +1,8 @@
 import pygame
 from CONFIG.CONST import *
-import Inreface.Button.Button_v2
 import sys
 
 # import Field
-
-
-# доделать чтобы не лагала анимация
-
 
 # мы будем прятать курсор мыши в игре, но если пользователь будет нажимать esc то мы будем его показывать вместе с меню
 # для нажатия на кнопки
@@ -52,7 +47,6 @@ class new_menu:
         self.height = height
         # изображение поверхности
         self.image = image
-        self.image = pygame.transform.scale(self.image, (self.width, self.height))
         # предыдущая по слою поверхность
         self.mother_screen = mother_screen
         # кнопки
@@ -65,12 +59,9 @@ class new_menu:
         # self.mother_screen.blit(self.newSurface, (self.x, self.y))
 
         # создание поверхности меню
-        self.rect = self.image.get_rect()
-        self.rect.topleft = (self.x, self.y)
         self.menu_surface = pygame.Surface((self.width, self.height))
         self.menu_surface.blit(self.image, (self.x, self.y))
         self.mother_screen.blit(self.menu_surface, (self.x, self.y))
-        pygame.display.update(self.rect)
         # pygame.display.update()
 
     def adding_button(self, parameter_lst):
@@ -126,44 +117,45 @@ def retry():
 # retry_button = Button_v2.Button([720, 150, 200, 60, retry_img, menu_surface, retry, False])
 # pygame.display.update()
 menu_mode = -1
-esc_counter = 0
 
 while True:
-    screen.fill((200, 200, 100))
-
+    # screen.fill((200, 200, 100))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
-                esc_counter += 1
-                if esc_counter%2 == 0:
-                    menu_mode = -1
-                    print('menu closed')
+                print('menu opened')
+                if menu_mode == 1:
+                    menu_mode = 0
                 else:
-                    if menu_mode == 1:
-                        menu_mode = 0
-                    else:
-                        menu_mode = 1
-                        print('menu opened')
+                    menu_mode = 1
+        elif event.type == pygame.KEYUP:
+            if event.key == pygame.K_ESCAPE:
+                print('manu closed')
+                menu_mode = -1
 
-    if menu_mode == 1 or menu_mode == 0:
-        if menu_mode == 1:
-            menu = new_menu(0, 0, 1000, 600, wallpaper_img, screen,
-                            new_game_button=[30, 500, 150, 40, new_game_img, new_game, False],
-                            exit_button=[260, 500, 150, 40, exit_img, exit, False],
-                            shop_button=[490, 500, 150, 40, shop_img, store, False],
-                            retry_button=[720, 500, 150, 40, retry_img, retry, False]
-                            )
-            menu.placing_buttons()
-            # pygame.display.update()
-
+    if menu_mode == 1:
+        menu = new_menu(0, 0, 1000, 600, wallpaper_img, screen,
+                        new_game_button=[30, 150, 200, 60, new_game_img, new_game, False],
+                        exit_button=[260, 150, 200, 60, exit_img, exit, False],
+                        shop_button=[490, 150, 200, 60, shop_img, store, False],
+                        retry_button=[720, 150, 200, 60, retry_img, retry, False]
+                        )
+        menu.placing_buttons()
+        # pygame.display.update()
         for button in buttons:
             button.process()
         screen.blit(menu.menu_surface, (0, 0))
-        # pygame.display.update()
-    else:
+        pygame.display.update()
+    elif menu_mode == 0:
+        for button in buttons:
+            button.process()
+        screen.blit(menu.menu_surface, (0, 0))
+        pygame.display.update()
+    if menu_mode == -1:
+        screen.fill((200, 200, 100))
         pygame.display.update()
 
     fpsClock.tick(FPS)

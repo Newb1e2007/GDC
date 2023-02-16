@@ -1,6 +1,6 @@
 import pygame
 # from CONST import *
-from class_Point import *
+from Uni_Classes.Point import *
 
 d1 = ('00', '10', '20', '30')  # должно быть в CONST
 d2 = ('11', '21', '31')

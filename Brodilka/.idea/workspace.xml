@@ -4,11 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0e29c8-0660-4e74-8adb-ac9871d03ec7" name="Changes" comment="" />
+    <list default="true" id="8a0e29c8-0660-4e74-8adb-ac9871d03ec7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Interface/Button/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interface/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enemy/Enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enemy/Enemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/exit_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/exit_button_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/exit_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/exit_button_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/exit_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/exit_button_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/new_game_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/new_game_button_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/new_game_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/new_game_button_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/new_game_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/new_game_button_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/retry_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/retry_button_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/retry_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/retry_button_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/retry_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/retry_button_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/shop_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/shop_button_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/shop_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/shop_button_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/shop_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/shop_button_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Interface_clamping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Interface_clamping.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inreface/Interface_clicking.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Interface_clicking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uni_Classes/Slot/Slot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Uni_Classes/Slot/Slot.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -21,12 +50,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/Documents/GitHub/GDC/Brodilka&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Interface" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,5 +73,31 @@
       <updated>1674885878933</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

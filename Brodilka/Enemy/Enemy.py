@@ -1,12 +1,11 @@
 import pygame
 import random
-import math
-from class_Point import *
-from labirint_shortest_way import bfs
+# import math
+from Uni_Func.labirint_shortest_way import *
 
 
 class Enemy:
-    def __init__(self, entity_type, pos, speed=2, size=Point(30, 30), visual=(0, 0, 0), hp=None, follow=[True, 100], field=None, facing=Point(0, 1)):
+    def __init__(self, entity_type, pos, speed=2, size=Point(30, 30), visual=(0, 0, 0), hp=None, follow=(True, 100), field=None, facing=Point(0, 1)):
         self.type = entity_type  # не несёт смысловой нагрузки
         self.hp = hp  # не реализовано
 
@@ -43,7 +42,7 @@ class Enemy:
     def get_path(self, field=None):
         self.pathCount = 0
         path = [Point()]
-        if field is None:
+        if field is not None:
             self.path_len = random.randint(5, 30)
             directions = self._get_directions(field)  # список возможных направлений, вынесено сюда чтобы не ругался
             new_dir = random.choice(directions)
