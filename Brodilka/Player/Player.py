@@ -9,7 +9,7 @@ evgenii = [pygame.image.load('images/oaoaoaoaoaoaoaooa.png').convert_alpha(),
 
 
 class Player:
-    def __init__(self, x, y, width, height, speed, damage, hp, armor, energy, inventory_parameters, name=None):
+    def __init__(self, x, y, width, height, speed, damage, hp, armor, energy, exp, inventory_parameters, name=None):
         # позиция игрока   потом доработать с классом Point
         self.x = x
         self.y = y
@@ -33,6 +33,7 @@ class Player:
         self.currentArmor = armor
         self.energy = energy  # энергия(для подсчета зарядов/ударов)
         self.currentEnergy = energy
+        self.exp = exp
 
         # бабки
         self.cash = 0

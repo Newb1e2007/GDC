@@ -5,7 +5,7 @@ from CONFIG.CONST import *
 class Button:
     # тут будут создаваться кнопки6 задаваться их параметры и изображения, а так же функции их нажатия
 
-    def __init__(self, x, y, width, height, images, onclickFunction, onePress, surface):
+    def __init__(self, x, y, width, height, images, onclickFunction, onePress, surface, name='defaultButton'):
         # x, y - корды верхней левой клетки; width, height - размеры клетки; image - изображение клетки;
         #    surface - поверхность клетки; onclickFunction - функция, выполняемая кнопкой; onePress - зажимная/нет
         # print(parameter_lst, len(parameter_lst))
@@ -25,6 +25,8 @@ class Button:
         self.button_surface = pygame.Surface((self.width, self.height))
         self.surface.blit(self.button_surface, (self.x, self.y))
 
+        self.name = name
+
         self.onclickFunction = onclickFunction
         self.onePress = onePress
 
@@ -32,6 +34,7 @@ class Button:
         self.button_surface.blit(self.image1, (self.x, self.y))
         self.surface.blit(self.button_surface, (self.x, self.y))
         buttons.append(self)
+        print('True')
 
     # обрабатывание процесса нажатия/наведения и т.п., вызывается каждым кадром
     def process(self):
@@ -45,6 +48,7 @@ class Button:
             # self.surface.blit(self.button_surface, (self.x, self.y))
             self.surface.blit(self.image2, (self.x, self.y))
             pygame.display.update(self.rect)
+            print(self.name, 'updated')
             # print('hower')
             if pygame.mouse.get_pressed(num_buttons=3)[0]:  # нажата левая кнопка мыши
                 # self.button_surface.fill((200, 200, 0))
@@ -52,6 +56,7 @@ class Button:
                 # self.surface.blit(self.button_surface, (self.x, self.y))
                 self.surface.blit(self.image3, (self.x, self.y))
                 pygame.display.update(self.rect)
+                print(self.name, 'updated')
                 if self.onePress:
                     self.onclickFunction()
                 elif not self.alreadyPressed:
@@ -65,3 +70,4 @@ class Button:
             # self.surface.blit(self.button_surface, (self.x, self.y))
             self.surface.blit(self.image1, (self.x, self.y))
             pygame.display.update(self.rect)
+            print(self.name, 'updated')

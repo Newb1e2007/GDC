@@ -4,28 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0e29c8-0660-4e74-8adb-ac9871d03ec7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Interface/Button/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interface/__init__.py" afterDir="false" />
+    <list default="true" id="8a0e29c8-0660-4e74-8adb-ac9871d03ec7" name="Changes" comment="fixing structure and imports">
+      <change afterPath="$PROJECT_DIR$/Interface/Button/Button_func/trail_menu_buttons.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Interface/Start/Launcher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Uni_Classes/Menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enemy/Enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Enemy/Enemy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/exit_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/exit_button_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/exit_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/exit_button_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/exit_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/exit_button_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/new_game_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/new_game_button_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/new_game_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/new_game_button_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/new_game_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/new_game_button_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/retry_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/retry_button_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/retry_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/retry_button_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/retry_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/retry_button_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/shop_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/shop_button_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/shop_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/shop_button_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_img/shop_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_img/shop_button_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_v1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Button/Button_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Interface_clamping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Interface_clamping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inreface/Interface_clicking.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Interface_clicking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Uni_Classes/Slot/Slot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Uni_Classes/Slot/Slot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/exit_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/exit_button_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/exit_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/exit_button_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/exit_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/exit_button_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/new_game_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/new_game_button_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/new_game_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/new_game_button_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/new_game_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/new_game_button_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/retry_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/retry_button_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/retry_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/retry_button_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/retry_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/retry_button_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/shop_button_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/shop_button_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/shop_button_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/shop_button_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_img/shop_button_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/Button_img/shop_button_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/Button/Button_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Button/Button_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +57,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Images" />
       <recent name="$PROJECT_DIR$/Interface" />
     </key>
   </component>
@@ -72,6 +70,14 @@
       <option name="presentableId" value="Default" />
       <updated>1674885878933</updated>
     </task>
+    <task id="LOCAL-00001" summary="fixing structure and imports">
+      <created>1676570572307</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676570572307</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,5 +105,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixing structure and imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing structure and imports" />
   </component>
 </project>
