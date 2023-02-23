@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a0e29c8-0660-4e74-8adb-ac9871d03ec7" name="Changes" comment="Add menu class and fix some errors. Menu doesn't work correct, but works)">
-      <change afterPath="$PROJECT_DIR$/Uni_Classes/trail_menu.py" afterDir="false" />
+    <list default="true" id="8a0e29c8-0660-4e74-8adb-ac9871d03ec7" name="Changes" comment="Add images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface/Interface_clicking.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interface/Interface_clicking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Uni_Classes/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Uni_Classes/Menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676929965029</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add images">
+      <created>1677180629239</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677180629239</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +107,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixing structure and imports" />
     <MESSAGE value="Add menu class and fix some errors. Menu doesn't work correct, but works)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add menu class and fix some errors. Menu doesn't work correct, but works)" />
+    <MESSAGE value="Add images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add images" />
   </component>
 </project>
