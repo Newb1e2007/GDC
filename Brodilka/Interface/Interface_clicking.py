@@ -1,6 +1,8 @@
-import pygame
+import pygame as pg
 from CONFIG.CONST import *
+from Button import Button_v2
 import sys
+import os
 
 # import Field
 
@@ -10,33 +12,34 @@ import sys
 
 # мы будем прятать курсор мыши в игре, но если пользователь будет нажимать esc то мы будем его показывать вместе с меню
 # для нажатия на кнопки
-pygame.init()
-fpsClock = pygame.time.Clock()
+pg.init()
+fpsClock = pg.time.Clock()
 width, height = 1000, 600
-screen = pygame.display.set_mode((width, height))
-# menu_surface = pygame.Surface((1000, 600))
+screen = pg.display.set_mode((width, height))
+# menu_surface = pg.Surface((1000, 600))
 # menu_surface.fill((200, 200, 100))
 # screen.blit(menu_surface, (0, 0))
-pygame.display.update()
-font = pygame.font.SysFont('Arial', 15)
+pg.display.update()
+font = pg.font.SysFont('Arial', 15)
 
-new_game_img = [pygame.image.load('images/new_game_button_1.png').convert_alpha(),
-                pygame.image.load('images/new_game_button_2.png').convert_alpha(),
-                pygame.image.load('images/new_game_button_3.png').convert_alpha()
+os.chdir('/Users/user/Documents/GitHub/GDC/Brodilka')  # iMac-User/MacOS/Пользователи/User/Документы/GitHub/GDC/Brodilka
+new_game_img = [pg.image.load('Images/Button_img/new_game_button_1.png').convert_alpha(),
+                pg.image.load('Images/Button_img/new_game_button_2.png').convert_alpha(),
+                pg.image.load('Images/Button_img/new_game_button_3.png').convert_alpha()
                 ]
-exit_img = [pygame.image.load('images/exit_button_1.png').convert_alpha(),
-            pygame.image.load('images/exit_button_2.png').convert_alpha(),
-            pygame.image.load('images/exit_button_3.png').convert_alpha()
+exit_img = [pg.image.load('Images/Button_img/exit_button_1.png').convert_alpha(),
+            pg.image.load('Images/Button_img/exit_button_2.png').convert_alpha(),
+            pg.image.load('Images/Button_img/exit_button_3.png').convert_alpha()
             ]
-retry_img = [pygame.image.load('images/retry_button_1.png').convert_alpha(),
-             pygame.image.load('images/retry_button_2.png').convert_alpha(),
-             pygame.image.load('images/retry_button_3.png').convert_alpha()
+retry_img = [pg.image.load('Images/Button_img/retry_button_1.png').convert_alpha(),
+             pg.image.load('Images/Button_img/retry_button_2.png').convert_alpha(),
+             pg.image.load('Images/Button_img/retry_button_3.png').convert_alpha()
              ]
-shop_img = [pygame.image.load('images/shop_button_1.png').convert_alpha(),
-            pygame.image.load('images/shop_button_2.png').convert_alpha(),
-            pygame.image.load('images/shop_button_3.png').convert_alpha()
+shop_img = [pg.image.load('Images/Button_img/shop_button_1.png').convert_alpha(),
+            pg.image.load('Images/Button_img/shop_button_2.png').convert_alpha(),
+            pg.image.load('Images/Button_img/shop_button_3.png').convert_alpha()
             ]
-wallpaper_img = pygame.image.load('images/wallpaper.png').convert_alpha()
+wallpaper_img = pg.image.load('Images/Interface_img/wallpaper.png').convert_alpha()
 
 
 class new_menu:
@@ -51,7 +54,7 @@ class new_menu:
         self.height = height
         # изображение поверхности
         self.image = image
-        self.image = pygame.transform.scale(self.image, (self.width, self.height))
+        self.image = pg.transform.scale(self.image, (self.width, self.height))
         # предыдущая по слою поверхность
         self.mother_screen = mother_screen
         # кнопки
@@ -59,18 +62,18 @@ class new_menu:
         self.buttons_dict = kwargs
         self.buttons_lst = []
         # создание поверхности меню
-        # self.newSurface = pygame.Surface((self.width, self.height))
+        # self.newSurface = pg.Surface((self.width, self.height))
         # self.newSurface.blit(self.image, (self.x, self.y))
         # self.mother_screen.blit(self.newSurface, (self.x, self.y))
 
         # создание поверхности меню
         self.rect = self.image.get_rect()
         self.rect.topleft = (self.x, self.y)
-        self.menu_surface = pygame.Surface((self.width, self.height))
+        self.menu_surface = pg.Surface((self.width, self.height))
         self.menu_surface.blit(self.image, (self.x, self.y))
         self.mother_screen.blit(self.menu_surface, (self.x, self.y))
-        pygame.display.update(self.rect)
-        # pygame.display.update()
+        pg.display.update(self.rect)
+        # pg.display.update()
 
     def adding_button(self, parameter_lst):
         parameter_lst.append(self.menu_surface)
@@ -85,7 +88,7 @@ class new_menu:
         for button in self.buttons_lst:
             button.process()
         self.mother_screen.blit(self.menu_surface, (self.x, self.y))
-        # pygame.display.update()
+        # pg.display.update()
 
 
     # def set_button(self, button_name, x, y, width, height, images, onklick_fun):
@@ -110,7 +113,7 @@ def options():
 
 def exit():
     print('exit')
-    pygame.quit()
+    pg.quit()
     sys.exit()
 
 
@@ -123,19 +126,19 @@ def retry():
 # exit_button = Button_v2.Button([260, 150, 200, 60, exit_img, menu_surface, exit, False])
 # shop_button = Button_v2.Button([490, 150, 200, 60, shop_img, menu_surface, store, False])
 # retry_button = Button_v2.Button([720, 150, 200, 60, retry_img, menu_surface, retry, False])
-# pygame.display.update()
+# pg.display.update()
 menu_mode = -1
 esc_counter = 0
 
 while True:
     screen.fill((200, 200, 100))
 
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
+            pg.quit()
             sys.exit()
-        elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_ESCAPE:
+        elif event.type == pg.KEYDOWN:
+            if event.key == pg.K_ESCAPE:
                 esc_counter += 1
                 if esc_counter%2 == 0:
                     menu_mode = -1
@@ -156,13 +159,13 @@ while True:
                             retry_button=[720, 500, 150, 40, retry_img, retry, False]
                             )
             menu.placing_buttons()
-            # pygame.display.update()
+            # pg.display.update()
 
         for button in buttons:
             button.process()
         screen.blit(menu.menu_surface, (0, 0))
-        # pygame.display.update()
+        # pg.display.update()
     else:
-        pygame.display.update()
+        pg.display.update()
 
     fpsClock.tick(FPS)
