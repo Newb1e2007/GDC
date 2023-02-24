@@ -75,9 +75,10 @@ class Menu:
                     button_parameters[3],
                     button_parameters[4],
                     self.menuSurf,
-                    name=button_parameters[4]
+                    name=button_parameters[5]
                 )
             )
+            print(button_parameters, button_parameters[5])
             # x, y, width, height, images, onclickFunction, onePress, surface, name='defaultButton'
         for button in self.buttons_lst:
             button.process()
@@ -129,18 +130,18 @@ while running:
             menu = Menu(screen, (20, 20), (700, 500), wallpaper_img)
             menu_lst.append(menu)
             # x, y, width, height, images, onclickFunction, onePress, surface, is_surf_class=False,  name='defaultButton'
-            menu.add_button([(30, 120), (100, 40), new_game_img, tmb.new_game, True, menu.menuSurf, 'new_game_button'])
+            menu.add_button([(30, 120), (100, 40), new_game_img, tmb.new_game, True, 'new_game_button'])
             menu.add_img([(30, 30), (100, 50), skin_img])
             # screen.blit(menu.menuSurf, (20, 20))
             # pg.display.update(menu.rect)
 
-        screen.blit(menu.menuSurf, (20, 20))
+        # screen.blit(menu.menuSurf, (20, 20))
         # pg.display.flip()
 
         for button in menu.buttons_lst:
             button.process()
 
-        # screen.blit(menu.menuSurf, (20, 20))
+        screen.blit(menu.menuSurf, (20, 20))
         pg.display.flip()
     else:
         pg.display.flip()
