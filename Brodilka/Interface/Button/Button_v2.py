@@ -21,10 +21,12 @@ class Button:
         self.image3 = pygame.transform.scale(self.image3, (self.width, self.height))
         self.rect = self.image1.get_rect()
         self.rect.topleft = (self.x, self.y)
-        self.surface = surface
+        self.motherSurf = surface
         self.button_surface = pygame.Surface((self.width, self.height))
-        self.surface.blit(self.button_surface, (self.x, self.y))
+        self.motherSurf.blit(self.button_surface, (self.x, self.y))
 
+        # self.is_master_class = is_master_class
+        # self.master = master
         self.name = name
 
         self.onclickFunction = onclickFunction
@@ -32,8 +34,10 @@ class Button:
 
         self.alreadyPressed = False
         self.button_surface.blit(self.image1, (self.x, self.y))
-        self.surface.blit(self.button_surface, (self.x, self.y))
+        self.motherSurf.blit(self.button_surface, (self.x, self.y))
         buttons.append(self)
+        # if self.is_master_class:
+        #     self.master.buttons_lst.append(self)
         print('True')
 
     # обрабатывание процесса нажатия/наведения и т.п., вызывается каждым кадром
@@ -45,16 +49,16 @@ class Button:
         if self.rect.collidepoint(pos):
             # self.button_surface.fill((200, 200, 0))
             # self.button_surface.blit(self.image2, (self.x, self.y))
-            # self.surface.blit(self.button_surface, (self.x, self.y))
-            self.surface.blit(self.image2, (self.x, self.y))
+            # self.motherSurf.blit(self.button_surface, (self.x, self.y))
+            self.motherSurf.blit(self.image2, (self.x, self.y))
             pygame.display.update(self.rect)
             print(self.name, 'updated')
             # print('hower')
             if pygame.mouse.get_pressed(num_buttons=3)[0]:  # нажата левая кнопка мыши
                 # self.button_surface.fill((200, 200, 0))
                 # self.button_surface.blit(self.image3, (self.x, self.y))
-                # self.surface.blit(self.button_surface, (self.x, self.y))
-                self.surface.blit(self.image3, (self.x, self.y))
+                # self.motherSurf.blit(self.button_surface, (self.x, self.y))
+                self.motherSurf.blit(self.image3, (self.x, self.y))
                 pygame.display.update(self.rect)
                 print(self.name, 'updated')
                 if self.onePress:
@@ -67,7 +71,7 @@ class Button:
         else:
             # self.button_surface.fill((200, 200, 0))
             # self.button_surface.blit(self.image1, (self.x, self.y))
-            # self.surface.blit(self.button_surface, (self.x, self.y))
-            self.surface.blit(self.image1, (self.x, self.y))
+            # self.motherSurf.blit(self.button_surface, (self.x, self.y))
+            self.motherSurf.blit(self.image1, (self.x, self.y))
             pygame.display.update(self.rect)
             print(self.name, 'updated')
